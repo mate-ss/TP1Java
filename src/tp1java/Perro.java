@@ -4,26 +4,41 @@
  * and open the template in the editor.
  */
 package tp1java;
+
 /**
  *
  * @author Alumno
  */
-public class Raza_de_perro {
+public class Perro {
+    private String nombre;
     private String raza;
     private String tamaño;
     private String color;
 
     public void tomar_agua() {
-        System.out.println(this.raza + "está tomando agua");
+        System.out.println(this.nombre + "está tomando agua");
     }
 
     public void ladrar() {
         System.out.println("guaf guaf");
     }
-    public Raza_de_perro(String raza, String tamaño, String color) {
+
+    public Perro(String nombre, String raza, String tamaño, String color) {
+        this.nombre = nombre;
         this.raza = raza;
         this.tamaño = tamaño;
         this.color = color;
+    }
+    public Perro(){
+        
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getRaza() {
